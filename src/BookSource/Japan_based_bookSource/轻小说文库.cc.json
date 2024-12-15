@@ -19,10 +19,10 @@
       "author": "tag.td.4@text##.*作者：",
       "coverUrl": "tag.img.1@src",
       "init": "",
-      "intro": "//span[contains(text(), \\\"简介\\\")]/following-sibling::span/text()",
+      "intro": "@xpath//span[contains(text(), '内容简介')]/following-sibling::span[1]/text() | //span[contains(text(), '内容简介')]/following-sibling::span[1]//text()",
       "kind": "tag.td.3@text&&tag.td.5@text##.*分类：|.*状态：",
       "lastChapter": "@xpath://span[@style=\"font-size:14px;\"][1]/a/text()",
-      "name": "tag.b.1@text",
+      "name": "tag.b.2@text",
       "tocUrl": "text.小说目录@href",
       "wordCount": ""
     },
